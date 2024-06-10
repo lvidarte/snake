@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
-from board import Board
-from direction import Direction
+from snake_game.board import Board
+from snake_game.direction import Direction
 
 
 class Snake:
@@ -31,7 +31,8 @@ class Snake:
                 x + self.board.cell_size,
                 y + self.board.cell_size,
                 fill=self.COLOR_HEAD if (x, y) == self.head else self.COLOR_BODY,
-                outline=self.board.COLOR
+                outline=self.board.COLOR,
+                tags='snake',
             )
 
     def move(self) -> None:

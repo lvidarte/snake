@@ -2,10 +2,10 @@ from typing import Dict
 
 import tkinter as tk
 
-from board import Board
-from snake import Snake
-from food import Food
-from direction import Direction 
+from snake_game.board import Board
+from snake_game.snake import Snake
+from snake_game.food import Food
+from snake_game.direction import Direction 
 
 
 class Game:
@@ -65,7 +65,8 @@ class Game:
                 self.board.height // 2,
                 text="GAME OVER",
                 fill="white",
-                font=("Courier", 30)
+                font=("Courier", 30, "bold"),
+                tags='gameover',
             )
 
 

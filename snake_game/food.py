@@ -1,8 +1,8 @@
 import random
 from typing import Tuple
 
-from board import Board
-from snake import Snake
+from snake_game.board import Board
+from snake_game.snake import Snake
 
 
 class Food:
@@ -21,7 +21,8 @@ class Food:
             x + self.board.cell_size,
             y + self.board.cell_size,
             fill=self.COLOR,
-            outline=self.board.COLOR
+            outline=self.board.COLOR,
+            tags='food',
         )
 
     def create(self, snake: Snake) -> None:
