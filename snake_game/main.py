@@ -71,9 +71,9 @@ class Game:
 
 
 def run():
-    root = tk.Tk()
-    game = Game(root)
-    root.mainloop()
+    master = tk.Tk()
+    game = Game(master)
+    master.mainloop()
 
 
 if __name__ == "__main__":
