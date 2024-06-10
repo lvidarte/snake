@@ -41,3 +41,31 @@ python -m snake_game.main
 cd snake_game
 python -m unittest discover -s tests
 ```
+
+## Requirements
+
+Snake game requires Tkinter. Please install the 'python-tk' package for your system.
+
+1. Ubuntu/Debian
+
+```sh
+sudo apt install python3-tk
+```
+
+2. Fedora
+
+```sh
+sudo dnf install python3-tkinter
+```
+
+3. Arch Linux
+
+```sh
+sudo pacman -S tk
+```
+
+4. MacOS
+
+```sh
+brew install python-tk
+```

@@ -1,6 +1,18 @@
 from typing import Dict
 
-import tkinter as tk
+try:
+    import tkinter as tk
+except ImportError:
+    import sys
+    print('''
+This package requires Tkinter. Please install the 'python-tk' package for your system.
+
+Ubuntu/Debian: sudo apt install python3-tk
+Fedora: sudo dnf install python3-tkinter
+Arch Linux: sudo pacman -S tk
+MacOS: brew install python-tk
+''')
+    sys.exit(1)
 
 from snake_game.board import Board
 from snake_game.snake import Snake
