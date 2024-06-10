@@ -24,7 +24,7 @@ class Food:
             outline=self.board.COLOR
         )
 
-    def create_food(self, snake: Snake) -> None:
+    def create(self, snake: Snake) -> None:
         available_positions = [
             (x, y) for x in range(0, self.board.width, self.board.cell_size)
             for y in range(0, self.board.height, self.board.cell_size)

@@ -31,7 +31,7 @@ class Game:
 
         self.snake = Snake(self.board)
         self.food = Food(self.board)
-        self.food.create_food(self.snake)
+        self.food.create(self.snake)
 
         self.running = True
         self.run()
@@ -55,7 +55,7 @@ class Game:
                 self.running = False
             elif self.snake.head == self.food.position:
                 self.score += 1
-                self.food.create_food(self.snake)
+                self.food.create(self.snake)
                 self.snake.grow()
             self.draw_board()
             self.master.after(self.VELOCITY, self.run)
