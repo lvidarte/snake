@@ -70,7 +70,11 @@ class Game:
             )
 
 
-if __name__ == "__main__":
+def run():
     root = tk.Tk()
     game = Game(root)
     root.mainloop()
+
+
+if __name__ == "__main__":
+    run()

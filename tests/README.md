@@ -7,5 +7,5 @@ This directory contains unit tests for the Snake Game project.
 To run the tests, navigate to the root directory of the project and execute the following command:
 
 ```sh
-python -m unittest discover -s tests"
+python -m unittest discover -s tests
 ```

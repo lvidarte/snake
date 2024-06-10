@@ -6,6 +6,15 @@ A simple Snake game implemented in Python using Tkinter.
 
 ## Installation
 
+You can install the package via pip. Simply run the following command:
+
+```sh
+pip install snake-game-tk
+```
+
+Alternatively, you can clone the repository and run it manually:
+
+
 1. **Clone the repository**
 
 ```sh
@@ -24,4 +33,11 @@ sudo apt install python3-tk
 ```sh
 cd snake_game
 python -m snake_game.main
+```
+
+4. **Run Tests**
+
+```sh
+cd snake_game
+python -m unittest discover -s tests
 ```
