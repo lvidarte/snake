@@ -12,7 +12,7 @@ class Game:
     WIDTH: int = 400
     HEIGHT: int = 400
     CELL_SIZE: int = 20
-    VELOCITY: int = 200 # millisecons between movements
+    VELOCITY: int = 200 # milliseconds between movements
     DIRECTION_MAPPING: Dict[str, Direction] = {direction.value: direction for direction in Direction}
     UNALLOWED_DIRECTIONS: Dict[Direction, Direction] = {
         Direction.UP: Direction.DOWN,
